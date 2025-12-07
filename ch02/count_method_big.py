@@ -1,6 +1,9 @@
 # coding: utf-8
 import sys
-sys.path.append('..')
+parent = '..'
+if parent not in sys.path:
+    sys.path.append(parent)
+
 import numpy as np
 from common.util import most_similar, create_co_matrix, ppmi
 from dataset import ptb

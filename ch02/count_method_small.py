@@ -1,6 +1,9 @@
 # coding: utf-8
 import sys
-sys.path.append('..')
+parent = '..'
+if parent not in sys.path:
+    sys.path.append(parent)
+
 import numpy as np
 import matplotlib.pyplot as plt
 from common.util import preprocess, create_co_matrix, ppmi

@@ -1,5 +1,10 @@
 # coding: utf-8
 import sys
+parent = '..'
+if parent not in sys.path:
+    sys.path.append(parent)
+
+import sys
 sys.path.append('..')
 from common.util import preprocess, create_co_matrix, most_similar
 
